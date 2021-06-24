@@ -13,15 +13,35 @@
     cursor: pointer;
 }
 .button:hover .tooltip {
-    display: block;
+    visibility: visible;
     cursor: auto;
+
+    opacity: 1;
 }
 
 .tooltip {
-    display: none;
+    visibility: hidden;
     position: absolute;
-    top: 61px;
+    top: 65px;
+
+    opacity: 0;
+    transition: opacity 1s;
 }
+
+.tooltip:after {
+    content: "";
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 7px;
+    border-style: solid;
+    border-color:  transparent transparent #f56420 transparent;
+
+    
+  }
+
+
 .card {
     width: 150px;
     height: 200px;
