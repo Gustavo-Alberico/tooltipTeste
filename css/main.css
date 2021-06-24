@@ -9,9 +9,12 @@
     align-items: center;
     flex-direction: column;
 }
-
+.button:hover {
+    cursor: pointer;
+}
 .button:hover .tooltip {
-    display: flex;
+    display: block;
+    cursor: auto;
 }
 
 .tooltip {
